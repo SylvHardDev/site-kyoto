@@ -8,3 +8,8 @@
   src: url(/ressources/fonts/Nunito-VariableFont_wght.ttf);
 }
 
+*, ::after, ::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
