@@ -85,6 +85,7 @@ nav {
     flex-direction: column;
     height: auto;
     position: relative;
+    display: none;
   }
 
   .liste-nav.active {
