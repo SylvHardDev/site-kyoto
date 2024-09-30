@@ -8,8 +8,56 @@
   src: url(/ressources/fonts/Nunito-VariableFont_wght.ttf);
 }
 
-*, ::after, ::before {
+*,
+::after,
+::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
+body {
+  font-family: "nunito", sans-serif;
+}
+
+nav {
+  position: fixed;
+  height: 70px;
+  width: 100%;
+  z-index: 10;
+  background: linear-gradient(to bottom, #333, #626262);
+}
+
+.logo-menu {
+  display: none;
+  position: absolute;
+  width: 50px;
+  top: 10px;
+  right: 15PX;
+  z-index: 25;
+}
+
+.liste-nav {
+  background: linear-gradient(to bottom, #333, #626262);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  z-index: 20; 
+}
+
+.item-nav {
+  display: flex;
+  align-items: center;  
+}
+
+.item-nav a {
+  color: #f1f1f1;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
