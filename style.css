@@ -207,3 +207,54 @@ nav {
     width: 40px;
   }
 }
+
+/* =========== SECTION ASYMETRIQUE ========= */
+
+.section-asymetrique {
+  display: grid;
+  grid-template: 200px repeat(3, auto) / 1fr 600px 1fr;
+  background: #f1f1f1;
+}
+
+.section-asymetrique h2 {
+  grid-area: 1 / 1 / 2 / -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  font-size: -50px;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+.bloc-1,
+.img-grid-1 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.bloc-2,
+.img-grid-2 {
+  grid-area: 3 / 2 / 4 / 3;
+}
+
+.bloc-3,
+.img-grid-3 {
+  grid-area: 4 / 2 / 5 / 3;
+}
+
+.bloc {
+  background: #333;
+  color: #f1f1f1;
+  position: relative;
+  border-radius: 2px;
+  height: 750px;
+  margin-bottom: 250px;
+
+}
+
+.img-grid {
+  width: 500px;
+  height: 700px;
+  object-fit: cover;
+  position: relative;
+}
