@@ -329,4 +329,14 @@ nav {
   margin: 5px auto;
 }
 
+/* ========= lignes vertical ======== */
 
+.ligne-gauche {
+  grid-area: 1 / 2 / -1 / 3;
+  border-left: 1px solid #333;
+}
+
+.ligne-droite  {
+  grid-area: 1 / 3 / -1 / 4;
+  border-left: 1px solid #333;
+}
