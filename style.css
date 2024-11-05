@@ -340,3 +340,12 @@ nav {
   grid-area: 1 / 3 / -1 / 4;
   border-left: 1px solid #333;
 }
+
+/* =============== RESP ================ */
+
+@media screen and (max-width: 1200px) {
+  
+  .section-asymetrique {
+    grid-template: 200px repeat(6, auto) 100px;
+  }
+}
