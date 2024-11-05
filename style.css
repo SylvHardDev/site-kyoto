@@ -336,7 +336,7 @@ nav {
   border-left: 1px solid #333;
 }
 
-.ligne-droite  {
+.ligne-droite {
   grid-area: 1 / 3 / -1 / 4;
   border-left: 1px solid #333;
 }
@@ -344,8 +344,68 @@ nav {
 /* =============== RESP ================ */
 
 @media screen and (max-width: 1200px) {
-  
+
   .section-asymetrique {
-    grid-template: 200px repeat(6, auto) 100px;
+    grid-template: 200px repeat(6, auto) 100px / 1fr 600px 1fr;
+  }
+
+  .section-asymetrique h2 {
+    font-size: 50px;
+    padding-bottom: 0;
+  }
+
+  .bloc-1 {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+
+  .img-grid-1 {
+    grid-area: 3 / 2 / 4 / 3;
+  }
+
+  .bloc-right {
+    grid-area: 4 / 2 / 5 / 3;
+  }
+
+  .bloc-3 {
+    grid-area: 6 / 2 / 7 / 3;
+  }
+
+  .img-grid-3 {
+    grid-area: 7 / 2 / 8 / 3;
+  }
+
+  .bloc {
+    height: 100%;
+    margin-bottom: 0;
+  }
+
+  .img-grid {
+    position: static;
+    width: 600px;
+    height: 750px;
+  }
+
+  .img-grid-1,
+  .img-grid-3 {
+    top: 0;
+    left: 0;
+  }
+
+  .img-grid-2 {
+    top: 0;
+    left: 0;
+  }
+
+  .bloc-txt-left {
+    left: 0; 
+  }
+
+  .bloc-right {
+    right: 0;
+  }
+
+  .bloc-txt-left {
+    width: 100%;
+    height: 100%;
   }
 }
